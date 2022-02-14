@@ -1,0 +1,37 @@
+body{
+    overflow-x: hidden;
+}
+.logo img{
+    width: 250px;
+    height: 90px;
+}
+.myNav .nav-link,.btn-group .btn{
+    font-weight: bolder;
+}
+.myNav a:hover:not(.myNav a .active):not(.navbar .nav-item .dropdown-menu .dropdown-item){
+    border-bottom: 3px solid red;
+}
+.myNav .active{
+    border-bottom: 3px solid red;
+}
+.topbar .contact-info i{
+    padding: 7px;
+    color: rgba(26, 25, 25, 0.678);
+    font-size: 15px;
+}
+.topbar .social-links .fab{
+    padding: 10px;
+    font-size: 20px;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{
+        display: none;
+        margin-top:0; 
+    }
+	.navbar .nav-item:hover .dropdown-menu{
+        display: block;
+    }
+}
+.btn-group .btn{
+    background: white;
+}
