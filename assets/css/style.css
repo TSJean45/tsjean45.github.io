@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: "Merriweather Bold";
 }
-
 /* Navigation Bar */
 .navbar {
   background-color: rgba(3, 1, 24, 1);
@@ -27,7 +26,6 @@ body {
   color: white !important;
   font-family: "Lato", sans-serif;
 }
-
 /* Header */
 #header::before {
   content: "";
@@ -147,7 +145,6 @@ body {
     font-size: 18px;
   }
 }
-
 /* Title */
 .aboutme,
 .project {
@@ -180,7 +177,6 @@ body {
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
-
 /* About Me */
 .aboutme p {
   font-size: 18px;
@@ -218,7 +214,6 @@ body {
   color: rgba(255, 255, 255, 0.726);
   font-size: 20px;
 }
-
 /* Project */
 .project,
 .project li {
@@ -246,7 +241,6 @@ body {
 .project .list-group li {
   background-color: rgba(3, 1, 24, 0.95);
 }
-
 /* Footer */
 footer {
   background-color: rgba(3, 1, 24, 1);
