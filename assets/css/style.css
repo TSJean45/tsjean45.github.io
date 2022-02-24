@@ -214,6 +214,21 @@ body {
   color: rgba(255, 255, 255, 0.726);
   font-size: 20px;
 }
+.aboutme .first .bot-right {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+.aboutme .first .top-left {
+  transform: translateX(1220px);
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+.aboutme .first p {
+  width: 1000px;
+  margin: auto;
+}
 /* Project */
 .project,
 .project li {
