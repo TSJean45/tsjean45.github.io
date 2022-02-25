@@ -137,7 +137,7 @@ body {
 }
 @media all and (max-width: 990px) {
   #header #profilepic {
-    height: 400px;
+    height: 60vh;
   }
   #header h1 {
     font-size: 30px;
@@ -179,7 +179,7 @@ body {
 .aboutme .technical-title h2,
 .aboutme .soft-title h2,
 .contact .technical-title h2 {
-  font-size: 50px;
+  font-size: 200%;
   color: rgb(255, 255, 255);
 }
 /* About Me */
@@ -230,7 +230,12 @@ body {
   color: white;
   margin: 10px;
 }
-
+@media all and (max-width: 990px) {
+  .aboutme .technical ul li {
+    display: inline-block;
+    margin: 10px;
+  }
+}
 /* Project */
 .project,
 .project li {
@@ -268,14 +273,14 @@ footer p {
 }
 footer .social-icons {
   display: inline-flex;
-  align-items: flex-end;
+  justify-content: center;
 }
 footer .social-icons li {
   list-style-type: none;
 }
 footer .social-icons li i {
   font-size: 30px;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 footer .social-icons li i:hover {
@@ -283,9 +288,9 @@ footer .social-icons li i:hover {
 }
 @media all and (max-width: 650px) {
   footer p {
-    font-size: 10px;
+    font-size: 20px;
   }
   footer .social-icons li i {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
