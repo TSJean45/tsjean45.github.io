@@ -3,9 +3,13 @@
   font-family: cervanttis;
   src: url("../font/Cervanttis.otf");
 }
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: "Merriweather Bold";
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
 }
 /* Navigation Bar */
 .navbar {
@@ -17,15 +21,14 @@ body {
 }
 .navbar .nav-item a {
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  color: white !important;
 }
 .navbar .nav-item a:hover {
-  color: white !important;
+  color: rgba(248, 248, 248, 0.623) !important;
 }
 .navbar .nav-item .resume {
   padding: 8px 10px 8px 10px;
   color: white !important;
-  font-family: "Lato", sans-serif;
 }
 /* Header */
 #header::before {
@@ -41,10 +44,7 @@ body {
   z-index: -1;
 }
 #header h1 {
-  font-size: 48px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+  font-size: 7vh;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -54,7 +54,7 @@ body {
   padding: 30px;
 }
 #header #profilepic {
-  height: 70vh;
+  height: 60vh;
 }
 #header {
   position: relative;
@@ -64,9 +64,6 @@ body {
   justify-content: center;
   overflow-y: auto;
 }
-#header h1 {
-  font-size: 60px;
-}
 #header h1 a,
 #header h1 a:hover {
   color: #fff;
@@ -75,7 +72,7 @@ body {
   text-decoration: none;
 }
 .title-text p span {
-  font-size: 30px;
+  font-size: 4vh;
   color: white;
   display: none;
   font-family: "Lexend Deca", sans-serif;
@@ -98,7 +95,7 @@ body {
   list-style-type: none;
 }
 #header .contact ul li i {
-  font-size: 50px;
+  font-size: 5vh;
   padding: 20px;
   color: white;
 }
@@ -123,117 +120,75 @@ body {
     transform: translateY(-100%);
   }
 }
-@media all and (max-width: 1245px) {
-  #header #profilepic {
-    height: 450px;
-    margin-top: 20px;
-  }
+@media all and (max-width: 1200px) {
   #header h1 {
-    font-size: 50px;
-  }
-  .title-text p span {
-    font-size: 30px;
-  }
-}
-@media all and (max-width: 990px) {
-  #header #profilepic {
-    height: 60vh;
-  }
-  #header h1 {
-    font-size: 30px;
-    margin-top: 200px;
-  }
-  .title-text p span {
-    font-size: 18px;
-  }
-  #header .contact ul li i {
-    font-size: 30px;
+    margin-top: 500px;
   }
 }
 /* Title */
 .aboutme,
-.project {
-  padding: 10px;
-  margin-top: 50px;
+.project,
+.technical,
+.soft,
+.lang {
+  padding: 5px;
 }
 .aboutme .aboutme-title,
-.project .project-title,
-.contact .contact-title {
+.project .project-title {
   text-align: center;
   position: relative;
+  margin-top: 90px;
   border-bottom: 5px aqua solid;
 }
-.aboutme .technical-title,
-.aboutme .soft-title {
+.technical .technical-title,
+.soft .soft-title,
+.lang .lang-title {
   text-align: center;
   position: relative;
   border-bottom: 5px aqua solid;
 }
 .aboutme .aboutme-title h2,
 .project .project-title h2,
-.contact .contact-title h2 {
-  font-size: 50px;
+.technical .technical-title h2,
+.soft .soft-title h2,
+.lang .lang-title h2 {
   color: rgb(255, 255, 255);
-  margin-top: 100px;
-}
-.aboutme .technical-title h2,
-.aboutme .soft-title h2,
-.contact .technical-title h2 {
-  font-size: 200%;
-  color: rgb(255, 255, 255);
+  font-size: 7vh;
 }
 /* About Me */
 .aboutme p {
-  font-size: 18px;
+  font-size: 2.5vh;
   color: white;
 }
-.aboutme .first,
-.aboutme .second {
+.aboutme .about,
+.technical .technical,
+.soft .soft,
+.lang .lang {
   background-color: rgba(3, 1, 24, 0.95);
   padding: 20px;
 }
-.aboutme .first img,
-.aboutme .second img {
-  object-fit: property;
-  width: 100%;
-  height: 100%;
-}
-.aboutme .first p,
-.aboutme .second p {
+.aboutme .about {
   text-align: justify;
 }
-.aboutme .technical h3 {
+.technical .technical h3,
+.soft .soft h3,
+.lang .lang h3 {
   color: white;
-  font-size: 22px;
+  font-size: 3vh;
   padding: 15px 0 5px 0;
   text-align: left;
 }
-.aboutme .technical ul li {
+.technical .technical ul li,
+.soft .soft ul li,
+.lang .lang ul li {
   color: rgba(255, 255, 255, 0.726);
-  font-size: 20px;
-}
-.aboutme .soft h3 {
-  color: white;
-}
-.aboutme .soft ul li {
-  color: rgba(255, 255, 255, 0.726);
-  font-size: 20px;
-}
-.aboutme .first .bot-right {
-  font-size: 30px;
-  color: white;
-  margin: 10px;
-}
-.aboutme .first .top-left {
-  transform: translateX(1220px);
-  font-size: 30px;
-  color: white;
-  margin: 10px;
+  font-size: 2.5vh;
 }
 @media all and (max-width: 990px) {
-  .aboutme .technical ul li {
+  .technical .technical ul li {
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
+    text-align: center;
   }
 }
 /* Project */
@@ -245,7 +200,16 @@ body {
   display: flex;
 }
 .project .link i {
-  font-size: 35px;
+  font-size: 5vh;
+}
+.project .card-title {
+  font-size: 3vh;
+}
+.project .card-text {
+  font-size: 2.5vh;
+}
+.project .link .demo a {
+  font-size: 2vh;
 }
 .project .link .demo:hover {
   background-color: rgb(122, 2, 2);
@@ -269,7 +233,7 @@ footer {
 }
 footer p {
   color: white;
-  font-size: 20px;
+  font-size: 3vh;
 }
 footer .social-icons {
   display: inline-flex;
@@ -279,18 +243,10 @@ footer .social-icons li {
   list-style-type: none;
 }
 footer .social-icons li i {
-  font-size: 30px;
-  padding: 10px;
+  font-size: 3vh;
+  padding: 0 10px;
   color: white;
 }
 footer .social-icons li i:hover {
   text-shadow: #2d60e2 0 0 5px;
-}
-@media all and (max-width: 650px) {
-  footer p {
-    font-size: 20px;
-  }
-  footer .social-icons li i {
-    font-size: 25px;
-  }
 }
