@@ -182,7 +182,7 @@ body {
 .soft .soft ul li,
 .lang .lang ul li {
   color: rgba(255, 255, 255, 0.726);
-  font-size: 2.2vh;
+  font-size: 2.5vh;
 }
 @media all and (max-width: 990px) {
   .technical .technical ul li {
